@@ -1,0 +1,26 @@
+ALGORITHM sentence_checker
+VAR 
+str: STRING
+i: INTEGER
+nbWords: INTEGER
+nbvoyels: INTEGER
+BEGIN
+FOR i FROM 0 TO str.length-1 STEP 1  DO
+    IF(str[i]=" ") THEN
+        nbWords:= nbWords+1
+    END_IF
+END_FOR
+IF (str[i]="a") THEN
+    nbvoyels:= nbvoyels+1
+    ELSE_IF (str[i]="e") THEN
+    nbvoyels:= nbvoyels+1
+    ELSE_IF (str[i]="i") THEN
+    nbvoyels:= nbvoyels+1
+    ELSE_IF (str[i]="o") THEN
+    nbvoyels:= nbvoyels+1
+    ELSE_IF (str[i]="u") THEN
+    nbvoyels:= nbvoyels+1
+    ELSE
+    nbvoyels:= 0
+END_IF
+END

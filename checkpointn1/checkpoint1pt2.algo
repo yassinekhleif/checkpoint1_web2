@@ -1,0 +1,21 @@
+ALGORITHM arrays
+VAR
+    set1 : ARRAY_OF INTEGER[10]
+    set2 : ARRAY_OF INTEGER[10]
+    i: INTEGER
+    j: INTEGER
+    a: INTEGER
+    sum: INTEGER
+BEGIN
+    FOR i FROM 0 TO set1.length-1 STEP 1  DO
+    a:= set[i]
+        FOR j FROM 0 TO set2.length-1 STEP 1  DO
+            IF (set[j]=a) THEN
+                i:= i-1
+                j:= j-1
+                END_IF
+            END_IF
+        END_FOR
+    END_FOR
+    sum:= set[i]+set[j]
+END
